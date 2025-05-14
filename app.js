@@ -1,3 +1,15 @@
+// Adding start and losing sounds
+let startSound = new Audio("sounds/start.mp3")
+let loseSound = new Audio("sounds/lose.mp3")
+
+function startGameSound() {
+    startSound.play()
+}
+
+function gameOverSound() {
+    loseSound.play()
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const scoreDisplay = document.getElementById("score")
     const width = 28
@@ -67,6 +79,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     createBoard()
+    startGameSound()
+
 
     //create Characters
     // draw pac-man onto the board
@@ -230,8 +244,10 @@ document.addEventListener("DOMContentLoaded", () => {
             !squares[pacmanCurrentIndex].classList.contains("scared-ghost")) {
             ghosts.forEach(ghost => clearInterval(ghost.timerId))
             document.removeEventListener("keyup", movePacman)
+                gameOverSound()
             setTimeout(function () {
                 alert("Game Over")
+                location.reload()
             }, 500)
         }
     }
@@ -243,6 +259,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.removeEventListener("keyup", movePacman)
             setTimeout(function () {
                 alert("You have WON!")
+                location.reload()
             }, 500)
         }
     }

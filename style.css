@@ -1,3 +1,25 @@
+@media (max-width: 600px) {
+    .grid {
+        transform: scale(0.7);
+    }
+
+    .card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -5,20 +27,20 @@
     height: 560px;
     border: solid black;
 }
-  
+
 .grid div {
     width: 20px;
     height: 20px;
 }
 
 .pac-dot {
-    background-color: green;   
+    background-color: green;
     border: 5px solid white;
     box-sizing: border-box;
 }
 
 .wall {
-    background-color: blue;
+    background-color: #283593;
 }
 
 .power-pellet {
@@ -27,19 +49,19 @@
 }
 
 .blinky {
-    background-color: red;
+    background-color: #e53935;
 }
 
 .pinky {
-    background-color: pink;
+    background-color: #f06292;
 }
 
 .inky {
-    background-color: cyan;
+    background-color: #1de9b6;
 }
 
 .clyde {
-    background-color: orange;     
+    background-color: #ff9100;
 }
 
 .pac-man {
@@ -48,5 +70,55 @@
 }
 
 .scared-ghost {
-    background-color: aquamarine;
+    background-color: #1de9b6;
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1.5rem;
+    background-color: #ffffff;
+    border: 2px solid #283593;
+    box-shadow: 0 0 20px rgba(40, 53, 147, 0.4);
+}
+
+.card h3 {
+    color: #283593;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-control {
+    background-color: #fff7f0;
+    border: 2px solid #ff9100;
+    color: #283593;
+}
+
+.form-control::placeholder {
+    color: #cc7a00;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #ff9100;
+    box-shadow: 0 0 6px #ff9100;
+}
+
+.btn-primary {
+    background-color: #ff9100;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e07f00;
+}
+
+a {
+    color: #ff9100;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cc6f00;
 }
