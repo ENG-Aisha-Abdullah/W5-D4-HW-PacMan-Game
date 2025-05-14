@@ -1,3 +1,4 @@
+let apiUrl = "https://682199fa259dad2655afc100.mockapi.io/"
 // Adding start and losing sounds
 let startSound = new Audio("sounds/start.mp3")
 let loseSound = new Audio("sounds/lose.mp3")
@@ -247,6 +248,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 gameOverSound()
             setTimeout(function () {
                 alert("Game Over")
+
+                postScores()
+
                 location.reload()
             }, 500)
         }
@@ -259,8 +263,36 @@ document.addEventListener("DOMContentLoaded", () => {
             document.removeEventListener("keyup", movePacman)
             setTimeout(function () {
                 alert("You have WON!")
+
+                postScores()
+                
+
                 location.reload()
             }, 500)
         }
     }
 })
+
+
+// post scores
+const postScores = async () => {
+    try {
+
+        let res = await fetch(`${apiUrl}/scores`, {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+        },
+            body: JSON.stringify({
+                username: localStorage.getItem("username"),
+                score: score.innerHTML
+            }),
+        });
+
+        let data = await res.json();
+        console.log(data)
+
+    } catch (error) {
+        console.log(error)
+    }
+}
