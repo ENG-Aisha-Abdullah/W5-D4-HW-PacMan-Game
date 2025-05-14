@@ -229,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
             document.removeEventListener("keydown", movePacman)
             setTimeout(function () {
                 alert("You have WON!")
-                window.location.href = "/level.html";
+                window.location.href = "level2.html"; 
             }, 500)
         }
     }
