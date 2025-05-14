@@ -34,9 +34,10 @@ body {
 }
 
 .pac-dot {
-    background-color: green;
-    border: 5px solid white;
-    box-sizing: border-box;
+background-image: url('https://png.pngtree.com/png-vector/20220825/ourmid/pngtree-pixel-art-coin-icon-design-vector-png-image_6122175.png');
+    
+background-size: cover;
+
 }
 
 .wall {
@@ -44,33 +45,39 @@ body {
 }
 
 .power-pellet {
-    background-color: green;
-    border-radius: 10px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/028/191/846/non_2x/hand-drawn-cute-art-cherry-fruit-free-png.png');
+    background-size: cover;
+   
 }
 
 .blinky {
-    background-color: #e53935;
+     background-image: url('https://pngimg.com/uploads/pacman/pacman_PNG18.png');
+    background-size: cover;
 }
 
 .pinky {
-    background-color: #f06292;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/shift-media/32/Pacman_Ghost-512.png');
+    background-size: cover;
 }
 
 .inky {
-    background-color: #1de9b6;
+    background-image: url('https://pngimg.com/uploads/pacman/pacman_PNG77.png');
+    background-size: cover;
 }
 
 .clyde {
-    background-color: #ff9100;
+    background-image: url('https://www.pngplay.com/wp-content/uploads/8/Pacman-Vector-PNG-HD-Quality.png');
+    background-size: cover;
 }
 
 .pac-man {
-    background-color: yellow;
-    border-radius: 10px;
+    background-image: url('https://png.pngtree.com/png-clipart/20230823/original/pngtree-scary-pacman-character-game-ghost-picture-image_8234178.png');
+    background-size: cover;
 }
 
 .scared-ghost {
-    background-color: #1de9b6;
+    background-image: url('https://pngimg.com/uploads/pacman/pacman_PNG36.png');
+    background-size: cover;
 }
 
 .card {
