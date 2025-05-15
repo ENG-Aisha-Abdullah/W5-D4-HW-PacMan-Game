@@ -12,6 +12,9 @@
 body {
     margin: 0;
     padding: 0;
+
+}
+.body-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +22,20 @@ body {
     height: 100vh;
     font-family: Arial, sans-serif;
 }
+#btn-signUp{
+    background-color: #ffa05a;
+    color: #ffffff;
+    }
+    #btn-logIn{
+    border: 2px solid #ffa05a ;
+    color: #ffa05a;
+    }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    width: 560px;
-    height: 560px;
+    width: 563px;
+    height: 563px;
     border: solid black;
 }
 
